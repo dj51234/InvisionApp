@@ -1,0 +1,70 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'bourbon@3.9' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'bourbon@3.9', null ]
+6 verbose cache add name=undefined spec="bourbon@3.9" args=["bourbon@3.9",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'bourbon@3.9',
+7 verbose parsed url   path: 'bourbon@3.9',
+7 verbose parsed url   href: 'bourbon@3.9' }
+8 verbose cache add name="bourbon" spec="3.9" args=["bourbon","3.9"]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: '3.9',
+9 verbose parsed url   path: '3.9',
+9 verbose parsed url   href: '3.9' }
+10 verbose addNamed [ 'bourbon', '3.9' ]
+11 verbose addNamed [ null, '>=3.9.0-0 <3.10.0-0' ]
+12 silly lockFile 7b68beb3-bourbon-3-9 bourbon@3.9
+13 verbose lock bourbon@3.9 /Users/derrickjohnson/.npm/7b68beb3-bourbon-3-9.lock
+14 silly addNameRange { name: 'bourbon', range: '>=3.9.0-0 <3.10.0-0', hasData: false }
+15 verbose registry.get https://registry.npmjs.org/bourbon not expired, no request
+16 silly addNameRange number 2 { name: 'bourbon', range: '>=3.9.0-0 <3.10.0-0', hasData: true }
+17 silly addNameRange versions [ 'bourbon',
+17 silly addNameRange   [ '4.1.1',
+17 silly addNameRange     '4.2.0-pre',
+17 silly addNameRange     '4.2.0-beta',
+17 silly addNameRange     '4.2.0',
+17 silly addNameRange     '4.2.1',
+17 silly addNameRange     '4.2.2',
+17 silly addNameRange     '4.2.3',
+17 silly addNameRange     '4.2.4',
+17 silly addNameRange     '5.0.0-alpha.0',
+17 silly addNameRange     '4.2.5',
+17 silly addNameRange     '4.2.6' ] ]
+18 silly lockFile 7b68beb3-bourbon-3-9 bourbon@3.9
+19 silly lockFile 7b68beb3-bourbon-3-9 bourbon@3.9
+20 error notarget No compatible version found: bourbon@'>=3.9.0-0 <3.10.0-0'
+20 error notarget Valid install targets:
+20 error notarget ["4.1.1","4.2.0-pre","4.2.0-beta","4.2.0","4.2.1","4.2.2","4.2.3","4.2.4","5.0.0-alpha.0","4.2.5","4.2.6"]
+20 error notarget
+20 error notarget This is most likely not a problem with npm itself.
+20 error notarget In most cases you or one of your dependencies are requesting
+20 error notarget a package version that doesn't exist.
+21 error System Darwin 15.0.0
+22 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "bourbon@3.9"
+23 error cwd /Users/derrickjohnson/Sites/invisionapp
+24 error node -v v0.10.33
+25 error npm -v 1.4.28
+26 error code ETARGET
+27 verbose exit [ 1, true ]

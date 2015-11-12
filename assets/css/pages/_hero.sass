@@ -1,0 +1,84 @@
+#hero
+  background: url(../img/hero-bg.jpg) no-repeat right center
+  background-size: cover
+  height: 100vh
+
+  // NAV //
+
+  .nav
+    border-bottom: 1px solid #37283b
+  .inner-nav
+    margin-top: 25px
+
+    img
+      width: 100px
+      height: auto
+      float: left
+      padding-bottom: 20px
+
+    ul
+      float: right
+      margin: 0
+      line-height: 30px
+
+
+      li
+        list-style-type: none
+        display: inline-block
+        font-size: 12px
+
+      a
+        color: #ddd
+        text-decoration: none
+        margin: 0 25px
+        padding-bottom: 25px
+        border-bottom: 3px solid transparent
+
+        &:last-of-type
+          margin-right: 0
+
+        &:hover
+          border-bottom: 3px solid white
+          color: #fff
+
+//HERO CONTENT //
+
+.hero-content
+  color: white
+  text-align: center
+  margin-top: 150px
+  h1
+    font-size: 50px
+    font-weight: 300
+    margin: 10px 0
+
+    &:last-of-type
+      margin-bottom: 20px
+
+  .button
+    padding: 10px 25px
+    background-color: #8824cd
+    color: white
+    text-decoration: none
+    font-weight: 300
+    font-size: 12px
+    letter-spacing: 1px
+    border-radius: 75px
+    border: 1px solid transparentize(#b87ce1,.7)
+    box-shadow: 1px 0 2px rgba(0,0,0,0.2)
+
+    &:hover
+      border-color: transparentize(#b87ce1,.4)
+
+  p
+    font-size: 20px
+    font-weight: 300
+    color: #ddd
+    font-style: italic
+    margin-bottom: 50px
+
+    &:last-child
+      font-size: 10px
+      font-weight: 300
+      padding-top: 15px
+      color: rgba(255,255,255,0.9)
