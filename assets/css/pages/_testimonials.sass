@@ -1,0 +1,32 @@
+#testimonials
+  width: 100%
+  .picture
+    height: 500px
+    background-color: #603470
+
+  .testimonial
+    padding-top: 50px
+
+    p:nth-child(2)
+      font-style: italic
+      line-height: 22px
+    p:nth-child(3)
+      font-style: italic
+      font-size: 14px
+      line-height: 20px
+
+.testimonial-pics
+  margin-top: 50px
+  display: flex
+  -webkit-display: flex
+  align-items: center
+  -webkit-align-items: center
+  img
+    display: inline-block
+    border-radius: 50%
+    border: 2px solid #444
+    margin: 0 10px
+    transition: all .2s ease-in-out
+
+    &.active
+      transform: scale(1.1)
