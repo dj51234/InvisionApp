@@ -1,12 +1,14 @@
 footer
-  padding: 50px 0
+  padding: 50px 0 0
 
   span
     font-size: 24px
     display: inline-block
     margin: 0 5px
-  .logo
 
+  .copyright
+    text-align: center
+    margin: 50px 0 10px
     p
       font-size: 10px
     img
@@ -14,9 +16,12 @@ footer
       height: auto
 
   ul
-    padding: 0
+    padding: 0 15px
     margin: 0
     line-height: 20px
+
+    &:first-child a:nth-child(2)
+      margin-bottom: 25px
 
 
     li
@@ -27,6 +32,7 @@ footer
     a
       text-decoration: none
       color: #555
+      display: inline-block
 
       &:hover
         color: #222

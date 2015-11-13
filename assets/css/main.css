@@ -612,7 +612,7 @@ td, th {
     display: inline-block;
     top: -45px;
     left: 50%;
-    margin-left: -67px; }
+    margin-left: -80px; }
   #cta a {
     display: inline-block;
     color: #2e3b4e;
@@ -657,9 +657,9 @@ td, th {
     transition: all 0.2s ease-in-out;
     font-smoothing: antialiased; }
     .testimonial-pics img.active {
-      -webkit-transform: scale(1.2);
-          -ms-transform: scale(1.2);
-              transform: scale(1.2); }
+      -webkit-transform: scale(1.3);
+          -ms-transform: scale(1.3);
+              transform: scale(1.3); }
 
 #cta-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/cta1.jpg) no-repeat;
@@ -707,6 +707,9 @@ td, th {
     border-radius: 5px;
     margin: 10px 0;
     padding-left: 10px; }
+    #contact input:focus {
+      outline: none;
+      box-shadow: 0 0 6px white; }
     #contact input[type^="submit"] {
       background-color: #fff;
       border: none;
@@ -733,33 +736,40 @@ td, th {
       font-size: 14px; }
 
 #clients {
-  color: #333; }
+  color: #333;
+  padding: 50px 0; }
   #clients img {
     display: inline-block;
     margin: 50px 20px;
     height: auto; }
 
 footer {
-  padding: 50px 0; }
+  padding: 50px 0 0; }
   footer span {
     font-size: 24px;
     display: inline-block;
     margin: 0 5px; }
-  footer .logo p {
-    font-size: 10px; }
-  footer .logo img {
-    width: 75px;
-    height: auto; }
+  footer .copyright {
+    text-align: center;
+    margin: 50px 0 10px; }
+    footer .copyright p {
+      font-size: 10px; }
+    footer .copyright img {
+      width: 75px;
+      height: auto; }
   footer ul {
-    padding: 0;
+    padding: 0 15px;
     margin: 0;
     line-height: 20px; }
+    footer ul:first-child a:nth-child(2) {
+      margin-bottom: 25px; }
     footer ul li {
       list-style-type: none;
       margin: 5px 0;
       font-size: 14px; }
     footer ul a {
       text-decoration: none;
-      color: #555; }
+      color: #555;
+      display: inline-block; }
       footer ul a:hover {
         color: #222; }
