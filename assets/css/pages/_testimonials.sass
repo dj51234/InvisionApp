@@ -1,6 +1,14 @@
 #testimonials
   width: 100%
 
+  .test-title
+    color: #333
+
+
+  .test-description
+    font-size: 12px
+    text-transform: uppercase
+
   .picture
     background: url(../img/128.jpg) no-repeat right center
     background-size: cover
@@ -10,16 +18,20 @@
   .testimonial
     padding-top: 100px
 
-    p:nth-child(2)
+    h3
+      color: #333
+
+    p:nth-child(3)
       font-style: italic
       line-height: 22px
     p:nth-child(3)
       font-style: italic
       font-size: 14px
       line-height: 20px
+      color: #666
 
 .testimonial-pics
-  margin-top: 50px
+  margin: 50px 0
   display: flex
   -webkit-display: flex
   align-items: center
@@ -34,6 +46,7 @@
     margin: 0 10px
     transition: all .2s ease-in-out
     font-smoothing: antialiased
+    cursor: pointer
 
     &.active
       transform: scale(1.3)

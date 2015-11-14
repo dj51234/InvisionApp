@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $('.pic:first-child').addClass('active');
   smoothScroll();
   testimonialsPics();
 });
@@ -22,10 +23,12 @@ function testimonialsPics() {
     var bg = $(this).data('background');
     var title = $(this).data('title');
     var position = $(this).data('position');
+    var description = $(this).data('description');
 
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
     $('.test-title').html(title);
+    $('.test-description').html(description);
     $('.picture').css({
       'background':'url(assets/img/'+ bg +'.jpg)',
       'background-position':''+ position +'',
