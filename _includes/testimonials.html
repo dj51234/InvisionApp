@@ -5,11 +5,11 @@
     <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam rerum, eos accusantium aut, iure aspernatur a repudiandae autem omnis incidunt, nesciunt facere hic perferendis. Cum rerum commodi debitis praesentium at?"</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quasi obcaecati aliquam alias, et numquam tempore maxime! Quidem maiores, quos inventore eaque natus, minus, alias eos sapiente obcaecati possimus accusantium.</p>
     <div class="testimonial-pics">
-      <a href=""><img class="active" src="assets/img/128.jpg" alt=""></a>
-      <a href=""><img src="assets/img/128-1.jpg" alt=""></a>
-      <a href=""><img src="assets/img/128-2.jpg" alt=""></a>
-      <a href=""><img src="assets/img/128-3.jpg" alt=""></a>
-      <a href=""><img src="assets/img/128-4.jpg" alt=""></a>
+      {% for image in site.data.settings.testimonials %}
+      <div class="pic" data-background="{{image.image}}" data-title="{{image.title}}" style="background: url(assets/img/{{image.image}}.jpg) {{image.position}} no-repeat;background-size:cover;"></div>
+      {% endfor %}
     </div>
+    <h3 class="test-title">Superman</h3>
+    <p>CEO/Founder - Twitter</p>
   </div>
 </section>

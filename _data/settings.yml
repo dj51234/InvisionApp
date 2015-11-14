@@ -1,0 +1,12 @@
+clients:
+- {logo: 'uber'}
+- {logo: 'linkedin'}
+- {logo: 'evernote'}
+- {logo: 'shopify'}
+
+testimonials:
+- {image: '128', position: 'right center', title: "Superman"}
+- {image: '128-1', position: 'right center', title: "Tony Starks"}
+- {image: '128-2', position: 'center center', title: "Scarlett Johansson"}
+- {image: '128-3', position: 'center center', title: "The Hulk"}
+- {image: '128-4', position: 'center center', title: "Captain America"}

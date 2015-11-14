@@ -2,16 +2,11 @@
   <div class="container">
     <div class="frame">
       <div class="icons">
-        <img src="assets/img/invision-logo-pink.png" class="col-2" alt="">
-        <img src="assets/img/invision-logo-pink.png" class="col-2" alt="">
-        <img src="assets/img/invision-logo-pink.png" class="col-2" alt="">
-        <img src="assets/img/invision-logo-pink.png" class="col-2" alt="">
-        <img src="assets/img/invision-logo-pink.png" class="col-2" alt="">
-        <img src="assets/img/invision-logo-pink.png" class="col-2" alt="">
-        <img src="assets/img/invision-logo-pink.png" class="col-2" alt="">
-        <img src="assets/img/invision-logo-pink.png" class="col-2" alt="">
-        <img src="assets/img/invision-logo-pink.png" class="col-2" alt="">
-        <img src="assets/img/invision-logo-pink.png" class="col-2" alt="">
+        {% for logo in site.data.settings.clients %}
+        <div class="logo col-3">
+          <img src="assets/img/{{logo.logo}}.png" alt="">
+        </div>
+        {% endfor %}
       </div>
     </div>
   </div>

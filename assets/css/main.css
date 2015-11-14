@@ -647,7 +647,7 @@ td, th {
   -ms-flex-align: center;
       align-items: center;
   -webkit-align-items: center; }
-  .testimonial-pics img {
+  .testimonial-pics .pic {
     width: 50px;
     height: 50px;
     display: inline-block;
@@ -656,7 +656,7 @@ td, th {
     margin: 0 10px;
     transition: all 0.2s ease-in-out;
     font-smoothing: antialiased; }
-    .testimonial-pics img.active {
+    .testimonial-pics .pic.active {
       -webkit-transform: scale(1.3);
           -ms-transform: scale(1.3);
               transform: scale(1.3); }
@@ -711,9 +711,12 @@ td, th {
       outline: none;
       box-shadow: 0 0 6px white; }
     #contact input[type^="submit"] {
-      background-color: #fff;
+      background-color: #eee;
       border: none;
-      color: #2e3b4e; }
+      color: #2e3b4e;
+      transition: all 0.2s ease-in-out; }
+      #contact input[type^="submit"]:hover {
+        background-color: #fff; }
     #contact input::-webkit-input-placeholder {
       color: #999;
       font-weight: 300;
@@ -738,10 +741,18 @@ td, th {
 #clients {
   color: #333;
   padding: 50px 0; }
+  #clients .icons {
+    width: 100%;
+    text-align: center; }
+    #clients .icons div:nth-child(1) img {
+      padding-top: 15px; }
   #clients img {
-    display: inline-block;
-    margin: 50px 20px;
-    height: auto; }
+    display: block;
+    max-width: 220px;
+    opacity: 0.6;
+    transition: opacity 0.1s ease-in-out; }
+    #clients img:hover {
+      opacity: 1; }
 
 footer {
   padding: 50px 0 0; }

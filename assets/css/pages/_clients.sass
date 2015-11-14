@@ -1,7 +1,20 @@
 #clients
   color: #333
   padding: 50px 0
+
+  .icons
+    width: 100%
+    text-align: center
+
+    div
+      &:nth-child(1) img
+        padding-top: 15px
+
   img
-    display: inline-block
-    margin: 50px 20px
-    height: auto
+    display: block
+    max-width: 220px
+    opacity: .6
+    transition: opacity .1s ease-in-out
+
+    &:hover
+      opacity: 1

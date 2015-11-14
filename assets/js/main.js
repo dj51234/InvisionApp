@@ -16,13 +16,18 @@ function smoothScroll(duration) {
 }
 
 function testimonialsPics() {
-  $('.testimonial-pics a img').on('click',function(event){
+  $('.pic').on('click',function(event){
     event.preventDefault();
-    var href = $(this).attr('src');
-    $(this).parent().siblings().children().removeClass('active');
+
+    var bg = $(this).data('background');
+    var title = $(this).data('title');
+
+    $(this).siblings().removeClass('active');
     $(this).addClass('active');
+    $('.test-title').html(title);
     $('.picture').css({
-      'background':'url('+ href +')',
+      'background':'url(assets/img/'+ bg +'.jpg)',
+      'background-position':'center center',
       'background-repeat':'no-repeat',
       'background-size':'cover'
     });
