@@ -5,7 +5,7 @@ clients:
 - {logo: 'shopify'}
 
 testimonials:
-- {image: '128', position: 'right center', title: "Superman", description: "CEO/Founder - Twitter"}
+- {image: '128', position: 'center center', title: "Superman", description: "CEO/Founder - Twitter"}
 - {image: '128-1', position: 'right center', title: "Tony Starks", description: "CEO/Founder - Facebook"}
 - {image: '128-2', position: 'center center', title: "Scarlett Johansson", description: "CEO/Founder - LinkedIn"}
 - {image: '128-3', position: 'center center', title: "The Hulk", description: "CEO/Founder - Google"}
