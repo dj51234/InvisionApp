@@ -625,12 +625,12 @@ td, th {
 #testimonials {
   width: 100%; }
   #testimonials .picture {
-    background: url(../img/128.jpg) no-repeat;
+    background: url(../img/128.jpg) no-repeat right center;
     background-size: cover;
-    height: 500px;
+    height: 550px;
     background-color: #603470; }
   #testimonials .testimonial {
-    padding-top: 50px; }
+    padding-top: 100px; }
     #testimonials .testimonial p:nth-child(2) {
       font-style: italic;
       line-height: 22px; }

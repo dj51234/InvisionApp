@@ -21,13 +21,14 @@ function testimonialsPics() {
 
     var bg = $(this).data('background');
     var title = $(this).data('title');
+    var position = $(this).data('position');
 
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
     $('.test-title').html(title);
     $('.picture').css({
       'background':'url(assets/img/'+ bg +'.jpg)',
-      'background-position':'center center',
+      'background-position':''+ position +'',
       'background-repeat':'no-repeat',
       'background-size':'cover'
     });
